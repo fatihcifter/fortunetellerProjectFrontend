@@ -43,7 +43,9 @@ class Responsive extends StatelessWidget {
     else {
       return 12;
     }
-  }static double convertHoroscope(BuildContext context) 
+  }
+  
+  static double convertHoroscope(BuildContext context) 
   {
     if (MediaQuery.of(context).size.width > 500) 
     {
@@ -53,7 +55,10 @@ class Responsive extends StatelessWidget {
       return 100;
     }
   }
-
+  static double getScreenWidth(BuildContext context) 
+  {
+      return MediaQuery.of(context).size.width;    
+  }
 
    static double convertTextHeader(BuildContext context) 
   {

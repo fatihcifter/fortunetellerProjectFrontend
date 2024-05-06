@@ -14,10 +14,10 @@ class NavigationScreen extends StatelessWidget {
       Get.put(MainWrapperController());
 
       final screen=[
-        HomeScreen(),
-        HoroscopeSignsScreen(),
-        FortuneSelectionScreen(),
-        AboutUsScreen()
+        const HomeScreen(),
+        const HoroscopeSignsScreen(),
+        const FortuneSelectionScreen(), 
+        const AboutUsScreen()
       ];
 
   @override

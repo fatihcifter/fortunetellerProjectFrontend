@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:fortuneteller/Models/Enums/FortuneType.dart';
+import 'package:fortuneteller/Pages/FortuneScreens/SelectingTellerScreen.dart';
 import 'package:fortuneteller/res/constants.dart';
 import 'package:fortuneteller/widgets/NavDrawer.dart';
 import 'package:fortuneteller/Pages/NavigationScreen.dart';
 import 'package:fortuneteller/widgets/rounded_button.dart';
 import 'package:get/get.dart';
-
-
 
 class FortuneSelectionScreen extends StatelessWidget {
   const FortuneSelectionScreen({Key? key}) : super(key: key);
@@ -30,35 +30,48 @@ class FortuneSelectionScreen extends StatelessWidget {
                 RoundedButtonWithText(
                   text: "Kahve Falı",
                   assetpath: "assets/images/tea-cup-100.png",
-                  onTap: () {},
+                  onTap: () {
+                    Get.to(
+                        SelectingTellerScreen(fortuneType: FortuneType.Coffee));
+                  },
                 ),
                 RoundedButtonWithText(
                   text: "Tarot Falı",
                   assetpath: "assets/images/tarot-100.png",
-                  onTap: () {},
-                ),              
+                  onTap: () {
+                    Get.to(
+                        SelectingTellerScreen(fortuneType: FortuneType.Coffee));
+                  },
+                ),
                 RoundedButtonWithText(
                   text: "Doğum Haritası",
                   assetpath: "assets/images/birth-date-100.png",
-                  onTap: () {},
+                  onTap: () {
+                    Get.to(
+                        SelectingTellerScreen(fortuneType: FortuneType.Coffee));
+                  },
                 ),
                 RoundedButtonWithText(
                   text: "İskambil Falı",
                   assetpath: "assets/images/playing-cards-100.png",
-                  onTap: () {},
+                  onTap: () {
+                    Get.to(
+                        SelectingTellerScreen(fortuneType: FortuneType.Coffee));
+                  },
                 ),
                 RoundedButtonWithText(
                   text: "Su Falı",
                   assetpath: "assets/images/water-100.png",
-                  onTap: () {},
-                ),            
+                  onTap: () {
+                    Get.to(
+                        SelectingTellerScreen(fortuneType: FortuneType.Coffee));
+                  },
+                ),
               ],
             ),
           ),
         ),
-      ),      
+      ),
     );
   }
 }
-
-

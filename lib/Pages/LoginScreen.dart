@@ -62,7 +62,7 @@ class LoginScreen extends StatelessWidget {
                     Expanded(flex: 25, child: Container()),
                     Expanded(
                         flex: 50,
-                        child: TextFormField(
+                        child:  TextFormField(
                           controller: LoginController.to.PasswordTxtController,
                           style: TextStyle(color: secondaryColor),
                           decoration: const InputDecoration(            
